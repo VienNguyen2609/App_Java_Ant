@@ -1,10 +1,10 @@
 package HomeMenu;
 
-import Account.Account;
-import Production.Shoes;
+import Model.Account;
+import Model.Shoes;
 import Jlogin.LoginUser;
-import DataFromSQL.AccountManager;
-import DataFromSQL.ProductManager;
+import Model.AccountManager;
+import Model.ProductManager;
 import com.sun.source.tree.ContinueTree;
 import java.awt.Image;
 import java.sql.SQLException;
@@ -391,7 +391,7 @@ public class Home extends javax.swing.JFrame {
 
         homeLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IconProduct/ImageHome.png"))); // NOI18N
         homeLabel.setText("jLabel3");
-        home.add(homeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1130, 590));
+        home.add(homeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1130, 580));
 
         pnContainer.add(home, "card2");
 

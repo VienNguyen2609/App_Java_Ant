@@ -1,6 +1,6 @@
 package JCreateAcc;
 
-import DataFromSQL.AccountManager;
+import Model.AccountManager;
 import Jlogin.LoginUser;
 import java.awt.Color;
 import java.awt.Font;
@@ -21,6 +21,7 @@ public class FormCreateAcc extends javax.swing.JFrame {
         addPlaceHolderStyle(txtgmail);
         addPlaceHolderStyle(txtconfirm);
 
+        AccountManager.Init();
     }
 
     public void addPlaceHolderStyle(JTextField textField) {
@@ -219,7 +220,7 @@ public class FormCreateAcc extends javax.swing.JFrame {
         if (dk != JOptionPane.YES_OPTION) {
             return;
         }
-        AccountManager.Init();
+
         AccountManager.instance.LoadAccount();
         try {
             String name = this.txtname.getText().trim();

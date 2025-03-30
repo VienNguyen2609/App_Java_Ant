@@ -1,4 +1,4 @@
-package Production;
+package Model;
 
 import java.util.Objects;
 

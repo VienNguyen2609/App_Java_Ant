@@ -1,4 +1,5 @@
-package Production;
+package Model;
+import Model.FootWear;
 import java.util.Objects;
 
 public class Shoes extends FootWear{

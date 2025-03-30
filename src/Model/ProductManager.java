@@ -1,7 +1,7 @@
-package DataFromSQL;
+package Model;
 
 import SQLConnection.SQLConnector;
-import Production.Shoes;
+import Model.Shoes;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -1,7 +1,7 @@
 
-package DataFromSQL;
+package Model;
 
-import Account.Account;
+import Model.Account;
 import SQLConnection.SQLConnector;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

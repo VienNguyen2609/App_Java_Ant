@@ -6,7 +6,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import HomeMenu.Home;
-import DataFromSQL.AccountManager;
+import Model.AccountManager;
 
 public class LoginUser extends javax.swing.JFrame {
 
@@ -14,6 +14,7 @@ public class LoginUser extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+        AccountManager.Init();
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -155,7 +156,7 @@ public class LoginUser extends javax.swing.JFrame {
     }//GEN-LAST:event_showpActionPerformed
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-        AccountManager.Init();
+        
         AccountManager.instance.LoadAccount();
         try {
             String name = this.txtname.getText().trim();
